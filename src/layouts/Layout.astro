@@ -1,0 +1,62 @@
+---
+import "milligram/dist/milligram.min.css"
+import "@fontsource/atkinson-hyperlegible"
+import "./layout.css"
+
+export interface Props {
+	title: string
+	url?: string
+}
+
+const { title } = Astro.props
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<a href="/">
+					<img src="/assets/avatar.png" width="200" class="logo" />
+				</a>
+				<nav>
+					<a href="/">nfrasser</a>
+					<a href="/projects">projects</a>
+					<a href="/photos">photos</a>
+					<a href="/blog">blog</a>
+				</nav>
+			</header>
+			<slot />
+		</div>
+		<style>
+			.logo {
+				display: inline;
+				border-radius: 50%;
+				margin-bottom: 1em;
+			}
+		</style>
+		<style is:global>
+			header {
+				text-align: center;
+				margin-top: 2em;
+			}
+
+			nav {
+				margin-bottom: 2em;
+			}
+
+			nav > * {
+				font-size: 2rem;
+				margin-left: 0.5em;
+				margin-right: 0.5em;
+			}
+		</style>
+	</body>
+</html>

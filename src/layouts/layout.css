@@ -1,0 +1,17 @@
+html {
+	font-size: 75%;
+}
+
+body {
+	font-family: "Atkinson Hyperlegible", sans-serif;
+	margin: 0;
+}
+
+code {
+	font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+		Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.container {
+	max-width: 80rem;
+}
