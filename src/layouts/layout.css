@@ -1,17 +1,106 @@
-html {
-	font-size: 75%;
-}
-
-body {
-	font-family: "Atkinson Hyperlegible", sans-serif;
-	margin: 0;
-}
-
-code {
-	font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+:root {
+	--bg-gradient: linear-gradient(-45deg, #33393a, #211c22);
+	--font-sans-serif: "Atkinson Hyperlegible", sans-serif;
+	--font-fixed-width: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
 		Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
-.container {
-	max-width: 80rem;
+body {
+	margin: 0;
+	background-image: var(--bg-gradient);
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	color: white;
+}
+
+code,
+pre {
+	font-family: var(--font-fixed-width);
+}
+
+header {
+	text-align: center;
+	margin-top: 2em;
+}
+
+nav {
+	margin-bottom: 2em;
+}
+
+nav a {
+	display: inline-block;
+	position: relative;
+	font-size: 1.25rem;
+	color: var(--color-initial);
+	font-family: var(--font-fixed-width);
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+	margin-bottom: 0.5em;
+	transition: transform 0.4s ease, color 0.4s ease;
+}
+
+nav a:hover {
+	color: var(--color-initial-dark);
+	transform: scale(1.15);
+}
+
+nav a::after {
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: -0.333em;
+	left: 0;
+	right: 0;
+	width: 0;
+	height: 0.25em;
+	margin: 0 auto;
+	background-color: var(--color-secondary);
+	transition: width 0.3s ease;
+}
+
+nav a:focus::after,
+nav a:hover::after,
+nav a.active::after {
+	width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--color-primary);
+}
+
+h1,
+.intro {
+	text-align: center;
+}
+
+.date {
+	text-align: center;
+	font-style: italic;
+}
+
+footer {
+	font-family: var(--font-fixed-width);
+	font-size: 1rem;
+	text-align: center;
+	padding: 2em 0;
+	opacity: 0.78;
+}
+
+main {
+	max-width: 72ch;
+	margin: 0 auto;
+}
+
+@media (min-width: 40rem) {
+	.main-grid {
+		display: grid;
+		grid-template-columns: repeat(2, 48%);
+		grid-row-gap: 1em;
+		grid-column-gap: 4%;
+	}
 }

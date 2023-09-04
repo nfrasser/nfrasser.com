@@ -1,0 +1,12 @@
+---
+import Album from "../../layouts/Album.astro"
+
+const photos = await Astro.glob("../../assets/photos/365ish/*.jpg")
+---
+
+<Album title="365ish" url="/photos/365ish" photos={photos}>
+	<p>
+		I took one photo every day (except Sundays) for one year. Total of 313 photos. April 2021 to
+		April 2022.
+	</p>
+</Album>

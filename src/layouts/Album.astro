@@ -1,0 +1,102 @@
+---
+import type { ImageMetadata } from "astro"
+import { Image } from "astro:assets"
+import Layout from "./Layout.astro"
+import type { Props as LayoutProps } from "./Layout.astro"
+
+import "photoswipe/style.css"
+
+export interface Props extends LayoutProps {
+	photos: Record<string, ImageMetadata>[]
+}
+
+type Photo = { img: ImageMetadata; alt: string }
+
+function formatPhotoName(filename: string): string {
+	return filename.split("/").pop()?.split(".")[0].split("-").join(" ") || "untitled"
+}
+
+const { title, url, photos } = Astro.props
+
+const thumbs: Photo[] = photos.map((img) => ({
+	img: img.default,
+	alt: formatPhotoName(img.default.src)
+}))
+---
+
+<Layout title={title} url={url}>
+	<h1>{title}</h1>
+	<slot />
+	<div id="gallery">
+		{
+			thumbs.map((thumb) => (
+				<a
+					class="figure"
+					href={thumb.img.src}
+					data-pswp-width={thumb.img.width}
+					data-pswp-height={thumb.img.height}
+				>
+					<Image
+						src={thumb.img}
+						alt={formatPhotoName(thumb.alt)}
+						width={568}
+						class="thumb"
+					/>
+					<p class="caption">{thumb.alt}</p>
+				</a>
+			))
+		}
+	</div>
+</Layout>
+
+<script>
+	// @ts-ignore
+	import PhotoSwipeLightbox from "photoswipe/lightbox"
+
+	const lightbox = new PhotoSwipeLightbox({
+		// may select multiple "galleries"
+		gallery: "#gallery",
+
+		// Elements within gallery (slides)
+		children: "a",
+
+		// setup PhotoSwipe Core dynamic import
+		pswpModule: () => import("photoswipe")
+	})
+	lightbox.init()
+</script>
+
+<style>
+	#gallery {
+		display: grid;
+		grid-template-columns: repeat(3, 32%);
+		grid-row-gap: 1em;
+		grid-column-gap: 2%;
+	}
+
+	.figure {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.thumb {
+		width: auto;
+		height: auto;
+		max-height: 6em;
+		margin: 0 auto;
+	}
+
+	.caption {
+		font-size: 1.2rem;
+		text-align: center;
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+
+	@media (min-width: 40rem) {
+		.thumb {
+			max-height: 12em;
+		}
+	}
+</style>

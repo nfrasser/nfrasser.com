@@ -1,0 +1,7 @@
+---
+import Album from "../../layouts/Album.astro"
+
+const photos = await Astro.glob("../../assets/photos/landscapes/*.jpg")
+---
+
+<Album title="landscapes" url="/photos/landscapes" photos={photos} />

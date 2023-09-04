@@ -1,22 +1,25 @@
 ---
+import { Image } from "astro:assets"
 export interface Props {
 	title: string
 	body: string
 	href: string
+	thumb?: ImageMetadata
+	class?: string
 }
 
-const { href, title, body } = Astro.props
+const { href, title, body, thumb, class: cls } = Astro.props
+const classes = ["link-card"]
+if (cls) {
+	classes.push(cls)
+}
 ---
 
-<li class="link-card">
+<li class={classes.join(" ")}>
 	<a href={href}>
-		<h2>
-			{title}
-			<span>&rarr;</span>
-		</h2>
-		<p>
-			{body}
-		</p>
+		{thumb && <Image src={thumb} alt={title} width={596} class="thumb" />}
+		<h2>{title}&nbsp;›</h2>
+		<p>{body}</p>
 	</a>
 </li>
 <style>
@@ -42,7 +45,7 @@ const { href, title, body } = Astro.props
 		padding: 1em 1.3em;
 		border-radius: 0.35rem;
 		color: var(--text-color);
-		background-color: white;
+		/* background-color: rgba(255, 255, 255, 0.333); */
 		opacity: 0.8;
 	}
 
@@ -66,11 +69,20 @@ const { href, title, body } = Astro.props
 	}
 
 	.link-card:is(:hover, :focus-within) h2 {
-		color: #4f39fa;
+		color: var(--color-secondary);
+	}
+
+	.link-card:is(:hover, :focus-within) a {
+		color: var(--color-inital);
 	}
 
 	.link-card:is(:hover, :focus-within) h2 span {
 		will-change: transform;
 		transform: translateX(2px);
+	}
+
+	.thumb {
+		width: 80%;
+		height: auto;
 	}
 </style>
