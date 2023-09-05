@@ -13,10 +13,10 @@
     "format": "prettier --write ."
   },
   "dependencies": {
+    "@astrojs/netlify": "^3.0.1",
     "@fontsource/atkinson-hyperlegible": "^5.0.3",
     "@nfrasser/milligram": "^1.4.1-1",
-    "astro": "^2.4.5",
-    "milligram": "^1.4.1",
+    "astro": "^3.0.8",
     "photoswipe": "^5.3.9"
   },
   "devDependencies": {
