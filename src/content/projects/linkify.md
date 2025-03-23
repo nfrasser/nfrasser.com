@@ -12,4 +12,4 @@ to HTML &lt;a&gt; tags. It automatically highlights URLs, #hashtags, @mentions
 and more.
 
 Learn more at [linkify.js.org](https://linkify.js.org). Linkify's source code is
-[available on GitHub](https://github.com/Hypercontext/linkifyjs).
+[available on GitHub](https://github.com/nfrasser/linkifyjs).
