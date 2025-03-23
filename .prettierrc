@@ -5,6 +5,5 @@
 	"printWidth": 100,
 	"semi": false,
 	"singleQuote": false,
-	"plugins": ["prettier-plugin-astro"],
-	"pluginSearchDirs": ["."]
+	"plugins": ["prettier-plugin-astro"]
 }
