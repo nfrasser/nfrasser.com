@@ -15,7 +15,7 @@
   "dependencies": {
     "@fontsource/atkinson-hyperlegible": "^5.0.3",
     "@nfrasser/milligram": "^1.4.1-1",
-    "astro": "^3.0.8",
+    "astro": "^5.5.4",
     "photoswipe": "^5.3.9"
   },
   "devDependencies": {
