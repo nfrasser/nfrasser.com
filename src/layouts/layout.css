@@ -1,8 +1,9 @@
 :root {
 	--bg-gradient: linear-gradient(-45deg, #33393a, #211c22);
 	--font-sans-serif: "Atkinson Hyperlegible", sans-serif;
-	--font-fixed-width: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-		Bitstream Vera Sans Mono, Courier New, monospace;
+	--font-fixed-width:
+		Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono,
+		Courier New, monospace;
 }
 
 body {
@@ -36,7 +37,9 @@ nav a {
 	margin-left: 0.5em;
 	margin-right: 0.5em;
 	margin-bottom: 0.5em;
-	transition: transform 0.4s ease, color 0.4s ease;
+	transition:
+		transform 0.4s ease,
+		color 0.4s ease;
 }
 
 nav a:hover {

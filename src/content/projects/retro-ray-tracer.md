@@ -76,10 +76,10 @@ depth of field enabled.
 
 ## Other features I implemented
 
--   Orthographic projection mode (as seen above)
--   Parallel ray tracing on multiprocessors
--   Spatial partitioning optimization (helped a ton when tracing thousands of
-    voxels per scene).
+- Orthographic projection mode (as seen above)
+- Parallel ray tracing on multiprocessors
+- Spatial partitioning optimization (helped a ton when tracing thousands of
+  voxels per scene).
 
 ---
 

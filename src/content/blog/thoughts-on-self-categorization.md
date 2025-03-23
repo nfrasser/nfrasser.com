@@ -8,13 +8,13 @@ All individuals are evolving, multidimensional beings. Don’t trick yourself in
 
 This includes
 
--   Your job/profession
--   Personality types
--   Horoscopes
--   Relationship attachment styles
--   Romantic/Sexual _preferences_ (see exceptions below)
--   Political Party
--   Gender
+- Your job/profession
+- Personality types
+- Horoscopes
+- Relationship attachment styles
+- Romantic/Sexual _preferences_ (see exceptions below)
+- Political Party
+- Gender
 
 Don’t let someone else’s rigid categories define you. Only you can do that.
 
@@ -28,8 +28,8 @@ If it brings you comfort then by all means keep your preferred category. If it h
 
 Some noteable exceptions I can think of:
 
--   Race (duh)
--   Sexual _orientation_
--   Basically anything you were born with that wasn’t chosen by you or someone else
+- Race (duh)
+- Sexual _orientation_
+- Basically anything you were born with that wasn’t chosen by you or someone else
 
 _This is just my opinion I have no idea if this is informed by any kind of scientific research._
