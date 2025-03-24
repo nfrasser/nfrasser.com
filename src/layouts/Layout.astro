@@ -11,6 +11,7 @@ export interface Props {
 }
 
 const { title, url, image, summary } = Astro.props
+const description = "Perpetually passionate about elegant solutions to difficult problems."
 ---
 
 <!doctype html>
@@ -19,15 +20,13 @@ const { title, url, image, summary } = Astro.props
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="icon" type="image/png" href="/assets/avatar.png" />
+		<title>{title}</title>
+		<meta name="description" content={summary || description} />
 		<meta name="generator" content={Astro.generator} />
 		<meta property="og:title" content={title} />
+		<meta property="og:description" content={summary || description} />
 		<meta property="og:url" content={`https://nfrasser.com${url}`} />
 		<meta property="og:image" content={`https://nfrasser.com${image || "/assets/avatar.png"}`} />
-		<meta
-			name="description"
-			content={summary || "Perpetually passionate about elegant solutions to difficult problems."}
-		/>
-		<title>{title}</title>
 	</head>
 	<body>
 		<div class="container">
