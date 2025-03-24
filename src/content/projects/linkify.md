@@ -1,6 +1,6 @@
 ---
 title: "Linkify"
-date: "Jan 4 2023"
+date: "December 27 2025"
 summary: "JavaScript library to find links in plain-text and convert themto HTML <a> tags"
 image: "/assets/projects/linkify.png"
 ---
