@@ -20,9 +20,9 @@ const { title, url, image, summary } = Astro.props
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="icon" type="image/png" href="/assets/avatar.png" />
 		<meta name="generator" content={Astro.generator} />
-		<meta property="og:image" content={image || "/assets/avatar.png"} />
 		<meta property="og:title" content={title} />
 		<meta property="og:url" content={`https://nfrasser.com${url}`} />
+		<meta property="og:image" content={`https://nfrasser.com${image || "/assets/avatar.png"}`} />
 		<meta
 			name="description"
 			content={summary || "Perpetually passionate about elegant solutions to difficult problems."}
