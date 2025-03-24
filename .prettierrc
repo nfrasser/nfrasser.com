@@ -2,7 +2,7 @@
 	"tabWidth": 4,
 	"useTabs": true,
 	"trailingComma": "none",
-	"printWidth": 100,
+	"printWidth": 120,
 	"semi": false,
 	"singleQuote": false,
 	"plugins": ["prettier-plugin-astro"]

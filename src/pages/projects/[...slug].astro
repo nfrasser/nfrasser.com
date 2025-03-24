@@ -20,6 +20,6 @@ const { entry } = Astro.props
 const { Content } = await entry.render()
 ---
 
-<Layout title={entry.data.title} url={`/projects/${entry.slug}`}>
+<Layout title={entry.data.title} url={`/projects/${entry.slug}/`} summary={entry.data.summary} image={entry.data.image}>
 	<Content />
 </Layout>

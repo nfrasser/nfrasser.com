@@ -1,9 +1,10 @@
 ---
 import Album from "../../layouts/Album.astro"
+import image from "../../assets/thumbs/japan-2024.jpg"
 
 const photos = await Astro.glob("../../assets/photos/japan-2024/*.jpg")
 ---
 
-<Album title="japan 2024" url="/photos/japan-2024" photos={photos}>
-	<p>Select travel shots from a trip I took to Japan with my fiancée on October 2024</p>
+<Album title="japan 2024" url="/photos/japan-2024/" photos={photos} image={image.src}>
+	<p>Select travel shots from a trip I took to Japan with my fiancée in October 2024</p>
 </Album>

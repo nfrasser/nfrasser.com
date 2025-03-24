@@ -22,7 +22,7 @@ const { entry } = Astro.props
 const { Content } = await entry.render()
 ---
 
-<Layout title={entry.data.title} url={`/blog/${entry.slug}`}>
+<Layout title={entry.data.title} url={`/blog/${entry.slug}/`} summary={entry.data.summary} image={entry.data.image}>
 	<h1>{entry.data.title}</h1>
 	<p class="date">
 		<time datetime=`${entry.data.date}T00:00:00Z`>{formatDate(entry.data.date)}</time>

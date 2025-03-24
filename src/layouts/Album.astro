@@ -8,6 +8,7 @@ import "photoswipe/style.css"
 
 export interface Props extends LayoutProps {
 	photos: Record<string, ImageMetadata>[]
+	image: string
 }
 
 type Photo = { img: ImageMetadata; alt: string }
@@ -16,7 +17,7 @@ function formatPhotoName(filename: string): string {
 	return filename.split("/").pop()?.split(".")[0].split("-").join(" ") || "untitled"
 }
 
-const { title, url, photos } = Astro.props
+const { title, url, photos, image } = Astro.props
 
 const thumbs: Photo[] = photos.map((img) => ({
 	img: img.default,
@@ -24,7 +25,7 @@ const thumbs: Photo[] = photos.map((img) => ({
 }))
 ---
 
-<Layout title={title} url={url}>
+<Layout title={title} url={url} image={image}>
 	<h1>{title}</h1>
 	<slot />
 	<div id="gallery">
@@ -36,12 +37,7 @@ const thumbs: Photo[] = photos.map((img) => ({
 					data-pswp-width={thumb.img.width}
 					data-pswp-height={thumb.img.height}
 				>
-					<Image
-						src={thumb.img}
-						alt={formatPhotoName(thumb.alt)}
-						width={568}
-						class="thumb"
-					/>
+					<Image src={thumb.img} alt={formatPhotoName(thumb.alt)} width={568} class="thumb" />
 					<p class="caption">{thumb.alt}</p>
 				</a>
 			))

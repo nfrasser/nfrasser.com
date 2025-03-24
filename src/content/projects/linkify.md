@@ -2,9 +2,12 @@
 title: "Linkify"
 date: "Jan 4 2023"
 summary: "JavaScript library to find links in plain-text and convert themto HTML <a> tags"
+image: "/assets/projects/linkify.png"
 ---
 
 # Linkify
+
+![Linkify logo](/assets/projects/linkify.png)
 
 Linkify is an open-source JavaScript library that I created and have been
 maintaining since 2013. Use Linkify to find links in plain-text and convert them

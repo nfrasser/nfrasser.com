@@ -6,16 +6,12 @@ import Layout from "../../layouts/Layout.astro"
 const allProjects = await getCollection("projects")
 ---
 
-<Layout title="projects by nfrasser" url="/projects">
+<Layout title="projects by nfrasser" url="/projects/">
 	<h1>projects</h1>
 	<ul class="main-grid" role="list">
 		{
 			allProjects.map((project) => (
-				<Card
-					href={`/projects/${project.slug}`}
-					title={project.data.title}
-					body={project.data.summary}
-				/>
+				<Card href={`/projects/${project.slug}/`} title={project.data.title} body={project.data.summary} />
 			))
 		}
 	</ul>

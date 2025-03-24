@@ -6,9 +6,11 @@ import "./layout.css"
 export interface Props {
 	title: string
 	url?: string
+	image?: string
+	summary?: string
 }
 
-const { title, url } = Astro.props
+const { title, url, image, summary } = Astro.props
 ---
 
 <!doctype html>
@@ -18,6 +20,13 @@ const { title, url } = Astro.props
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="icon" type="image/png" href="/assets/avatar.png" />
 		<meta name="generator" content={Astro.generator} />
+		<meta property="og:image" content={image || "/assets/avatar.png"} />
+		<meta property="og:title" content={title} />
+		<meta property="og:url" content={`https://nfrasser.com${url}`} />
+		<meta
+			name="description"
+			content={summary || "Perpetually passionate about elegant solutions to difficult problems."}
+		/>
 		<title>{title}</title>
 	</head>
 	<body>
@@ -27,18 +36,10 @@ const { title, url } = Astro.props
 					<img src="/assets/avatar.png" width="200" class="logo" />
 				</a>
 				<nav>
-					<a href="/" class:list={["", "/"].includes(url || "") ? ["active"] : []}>
-						nfrasser
-					</a>
-					<a href="/projects" class:list={url?.startsWith("/projects") ? ["active"] : []}>
-						projects
-					</a>
-					<a href="/photos" class:list={url?.startsWith("/photos") ? ["active"] : []}>
-						photos
-					</a>
-					<a href="/blog" class:list={url?.startsWith("/blog") ? ["active"] : []}>
-						blog
-					</a>
+					<a href="/" class:list={["", "/"].includes(url || "") ? ["active"] : []}>nfrasser</a>
+					<a href="/projects/" class:list={url?.startsWith("/projects") ? ["active"] : []}>projects</a>
+					<a href="/photos/" class:list={url?.startsWith("/photos") ? ["active"] : []}>photos</a>
+					<a href="/blog/" class:list={url?.startsWith("/blog") ? ["active"] : []}>blog</a>
 				</nav>
 			</header>
 			<main>
