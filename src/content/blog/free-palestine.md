@@ -25,7 +25,7 @@ Regardless of the vandal's true motive, they reached me. **I cannot, in good con
 
 ---
 
-It's been decades since Palestinians have had any advantage against Israel in this conflict. Against all odds (and perhaps with some help from its powerful allies), Israel [expelled Palestinians](https://remix.aljazeera.com/aje/PalestineRemix/maps_main.html) from the vast majority of the land they previously occupied. Israel [crammed them into Gaza and the West Bank](https://forward.com/opinion/402517/three-myths-about-gaza-dispelled/) without the resources to become self-sufficient. Israel's occupation of Palestine [crippled its economy](https://unctad.org/news/palestinian-socioeconomic-crisis-now-breaking-point) and drove its people to desperation. Then, whenever violence inevitably broke out, Israel's response was [swift and brutal](https://www.statista.com/chart/16516/israeli-palestinian-casualties-by-in-gaza-and-the-west-bank/). Today, Israel [restricts Palestinians from travelling](https://www.hrw.org/news/2022/06/14/gaza-israels-open-air-prison-15) and [heavily polices and surveils them](https://nebula.tv/videos/wendover-how-israels-security-failed), giving terrorism prevention as an excuse.
+It's been decades since Palestinians have had any advantage against Israel in this conflict. Against all odds (and perhaps with some help from its powerful allies), Israel [expelled Palestinians](https://remix.aljazeera.com/aje/PalestineRemix/maps_main.html) from the vast majority of the land they previously occupied. Israel [crammed them into Gaza and the West Bank](https://forward.com/opinion/402517/three-myths-about-gaza-dispelled/) without the resources to become self-sufficient. Israel's occupation of Palestine [impaired its economy](https://unctad.org/news/palestinian-socioeconomic-crisis-now-breaking-point) and drove its people to desperation. Then, whenever violence inevitably broke out, Israel's response was [swift and brutal](https://www.statista.com/chart/16516/israeli-palestinian-casualties-by-in-gaza-and-the-west-bank/). Today, Israel [restricts Palestinians from travelling](https://www.hrw.org/news/2022/06/14/gaza-israels-open-air-prison-15) and [heavily polices and surveils them](https://nebula.tv/videos/wendover-how-israels-security-failed), giving terrorism prevention as an excuse.
 
 Israel claims that it's just defending itself, but actions speak louder than words. It's very clear to me that **Israel wants the complete destruction of the Palestinian people so they can reclaim the land for themselves**.
 
@@ -49,7 +49,7 @@ This post is my attempt to address these questions, an attempt to do _something_
 
 It's true that [opportunities for peace](https://en.wikipedia.org/wiki/Oslo_Accords) have been wasted by both sides of the conflict. It's true that this is a complex issue and multiple parties, including some in Palestine, are to blame for what's happening.
 
-But right now, **only Israel has the power to end this conflict. Israel must hold an immediate ceasefire and withdraw of its forces from Gaza and the West Bank.**
+But right now, **only Israel has the power to end this conflict. Israel must hold an immediate ceasefire and withdraw its forces from Gaza and the West Bank.**
 
 And more than that, Israel has an amazing opportunity here. I think that Israel can start something new and beautiful, something that kicks off the next golden age for humanity.
 
