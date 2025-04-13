@@ -22,7 +22,7 @@ The more you restrict yourself to a specific method of existence, the more that 
 
 From personal experience, every time I take the [Myers-Briggs personality test](https://www.16personalities.com/) I get a different result. Like with everything, my personality of the day depends on my mood and other external factors. Plus now we know that Myers-Brigs has lost scientific merit over time.
 
-Another one is Attachment Styles I’ve qualities of all [three attachment styles](INSERT LINK HERE)
+Another one is Attachment Styles I’ve qualities of all [three attachment styles](https://www.attachedthebook.com/wordpress/).
 
 If it brings you comfort then by all means keep your preferred category. If it helps you and your community unite under a common cause, if taking on that category brings you power, if it helps you navigate this scary world, then _definitely_ keep taking it on.
 
