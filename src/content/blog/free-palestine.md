@@ -21,7 +21,7 @@ So this vandalism would be considered a hate crime if its purpose was to harm or
 
 But based on the evidence, I think there is another, more likely motive: The vandal wanted to raise awareness about the owner's support of Israel and its ongoing genocide of the people of Palestine, so that our neighbours who may be aware of her background but unaware of her political stance can decide whether they want to continue doing business with her.
 
-Regardless of the vandal's true motive, they reached me. **I cannot, in good conscience, support the owner or her business until she explicitly condemns the actions of the state of Israel and expresses her support for the people of Palestine.** I will instead support the [many](https://www.ijvcanada.org/about-ijv/) [Jewish](https://www.jewishvoiceforpeace.org/about/) [people](https://thecjn.ca/news/standing-together/) that have already done so.
+Regardless of the vandal's true motive, they reached me. **I cannot, in good conscience, support the owner or her business until she explicitly condemns the actions of the state of Israel and expresses her support for the people of Palestine.** I will instead support the [many](https://www.ijvcanada.org/about-ijv/), [many](https://www.jewishvoiceforpeace.org/about/) [people](https://thecjn.ca/news/standing-together/) that have already done so.
 
 ---
 
@@ -80,3 +80,5 @@ _From the river to the sea, Palestine will be free._
 If you can, please support humanitarian aid in Palestine by donating to the [UN Occupied Palestinian Territory Humanitarian Fund](https://crisisrelief.un.org/opt-crisis) or directly to people fleeing Gaza like [Ahmed and his family](https://chuffed.org/project/124906-help-ahmed-and-family-evacuate-gaza). If you have questions, spot any mistakes or would like to discuss your thoughts on this, please reach out to me on social media.
 
 Thank you for reading!
+
+_Edit (April 14 2025): Updating some wording to better reflect intent._
