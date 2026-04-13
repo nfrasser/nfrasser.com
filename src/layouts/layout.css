@@ -2,21 +2,15 @@
 	--bg-gradient: linear-gradient(-45deg, #33393a, #211c22);
 	--font-sans-serif: "Atkinson Hyperlegible", sans-serif;
 	--font-fixed-width:
-		Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono,
-		Courier New, monospace;
+		Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New,
+		monospace;
 }
 
 body {
+	font-family: var(--font-fixed-width);
 	margin: 0;
-	background-image: var(--bg-gradient);
 	background-size: 100% 100%;
 	background-attachment: fixed;
-	color: white;
-}
-
-code,
-pre {
-	font-family: var(--font-fixed-width);
 }
 
 header {
@@ -43,7 +37,7 @@ nav a {
 }
 
 nav a:hover {
-	color: var(--color-initial-dark);
+	color: var(--color-initial);
 	transform: scale(1.15);
 }
 
@@ -57,7 +51,7 @@ nav a::after {
 	width: 0;
 	height: 0.25em;
 	margin: 0 auto;
-	background-color: var(--color-secondary);
+	background-color: black;
 	transition: width 0.3s ease;
 }
 
@@ -65,15 +59,6 @@ nav a:focus::after,
 nav a:hover::after,
 nav a.active::after {
 	width: 100%;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	color: var(--color-primary);
 }
 
 h1,
