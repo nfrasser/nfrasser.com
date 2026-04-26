@@ -6,7 +6,8 @@ import cloudflare from "@astrojs/cloudflare"
 export default defineConfig({
 	integrations: [],
 	redirects: {
-		"/free-palestine": "/blog/free-palestine/"
+		"/free-palestine": "/blog/free-palestine/",
+		"/qr": "/photos/"
 	},
 	vite: {
 		ssr: {

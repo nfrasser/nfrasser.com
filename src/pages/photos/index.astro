@@ -3,18 +3,24 @@ import Card from "../../components/Card.astro"
 import Layout from "../../layouts/Layout.astro"
 import japan2024Thumb from "../../assets/thumbs/japan-2024.jpg"
 import portraitsThumb from "../../assets/thumbs/portraits.jpg"
-import landscapesThumb from "../../assets/thumbs/landscapes.jpg"
+import natureThumb from "../../assets/thumbs/nature.jpg"
 import three65Thumb from "../../assets/thumbs/313.jpg"
 import miscThumb from "../../assets/thumbs/misc.jpg"
+import architectureThumb from "../../assets/thumbs/architecture.jpg"
+import streetThumb from "../../assets/thumbs/street.jpg"
+import concertThumb from "../../assets/thumbs/concert.jpg"
 ---
 
 <Layout title="photos by nfrasser" url="/photos/">
 	<h1>photos</h1>
 	<ul class="main-grid" role="list" style="text-align: center;">
-		<Card href="/photos/japan-2024/" title="japan 2024" thumb={japan2024Thumb} body="" />
 		<Card href="/photos/portraits/" title="portraits" thumb={portraitsThumb} body="" />
-		<Card href="/photos/landscapes/" title="landscapes" thumb={landscapesThumb} body="" />
+		<Card href="/photos/architecture/" title="architecture" thumb={architectureThumb} body="" />
+		<Card href="/photos/street/" title="street" thumb={streetThumb} body="" />
+		<Card href="/photos/concert/" title="concert" thumb={concertThumb} body="" />
+		<Card href="/photos/nature/" title="nature" thumb={natureThumb} body="" />
 		<Card href="/photos/365ish/" title="365 (ish)" thumb={three65Thumb} body="" />
+		<Card href="/photos/japan-2024/" title="japan 2024" thumb={japan2024Thumb} body="" />
 		<Card href="/photos/misc/" title="miscellaneous" thumb={miscThumb} body="" />
 	</ul>
 </Layout>
