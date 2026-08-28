@@ -3,12 +3,5 @@
 	"compatibility_date": "2026-08-26",
 	"compatibility_flags": ["global_fetch_strictly_public"],
 	"name": "nfrasser",
-	"main": "@astrojs/cloudflare/entrypoints/server",
-	"assets": {
-		"directory": "./dist",
-		"binding": "ASSETS"
-	},
-	"observability": {
-		"enabled": true
-	}
+	"pages_build_output_dir": "./dist"
 }
