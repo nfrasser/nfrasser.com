@@ -8,9 +8,6 @@
 		"directory": "./dist",
 		"binding": "ASSETS"
 	},
-	"images": {
-		"binding": "IMAGES"
-	},
 	"observability": {
 		"enabled": true
 	}

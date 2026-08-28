@@ -1,7 +1,5 @@
 import { defineConfig } from "astro/config"
 
-import cloudflare from "@astrojs/cloudflare"
-
 // https://astro.build/config
 export default defineConfig({
 	integrations: [],
@@ -13,12 +11,5 @@ export default defineConfig({
 		ssr: {
 			noExternal: ["milligram"]
 		}
-	},
-
-	adapter: cloudflare({
-		imageService: { build: "compile", runtime: "cloudflare-binding" },
-		platformProxy: {
-			enabled: true
-		}
-	})
+	}
 })
