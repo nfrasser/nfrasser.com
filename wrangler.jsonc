@@ -3,5 +3,7 @@
 	"compatibility_date": "2026-08-26",
 	"compatibility_flags": ["global_fetch_strictly_public"],
 	"name": "nfrasser",
-	"pages_build_output_dir": "./dist"
+	"assets": {
+		"directory": "./dist"
+	}
 }
