@@ -2,7 +2,9 @@
 import Album from "../../layouts/Album.astro"
 import image from "../../assets/thumbs/portraits.jpg"
 
-const photos = Object.values(import.meta.glob("../../assets/photos/portraits/*.jpg", { eager: true }))
+const photos: Record<string, ImageMetadata>[] = Object.values(
+	import.meta.glob("../../assets/photos/portraits/*.jpg", { eager: true })
+)
 ---
 
 <Album title="portraits" url="/photos/portraits/" photos={photos} image={image.src} />

@@ -7,8 +7,7 @@ export default defineConfig({
 	integrations: [],
 	redirects: {
 		"/free-palestine": "/blog/free-palestine/",
-		"/qr": "/photos/",
-		"/qr/": "/photos/"
+		"/qr": "/photos/"
 	},
 	vite: {
 		ssr: {

@@ -11,7 +11,7 @@ const allProjects = await getCollection("projects")
 	<ul class="main-grid" role="list">
 		{
 			allProjects.map((project) => (
-				<Card href={`/projects/${project.slug}/`} title={project.data.title} body={project.data.summary} />
+				<Card href={`/projects/${project.id}/`} title={project.data.title} body={project.data.summary} />
 			))
 		}
 	</ul>
