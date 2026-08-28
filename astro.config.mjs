@@ -16,8 +16,7 @@ export default defineConfig({
 	},
 
 	adapter: cloudflare({
-		build: "compile",
-		runtime: "cloudflare-binding",
+		imageService: { build: "compile", runtime: "cloudflare-binding" },
 		platformProxy: {
 			enabled: true
 		}
