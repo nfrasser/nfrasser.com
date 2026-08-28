@@ -13,9 +13,9 @@
     "format": "prettier --write ."
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^12.3.0",
+    "@astrojs/cloudflare": "^14.2.5",
     "@fontsource/atkinson-hyperlegible": "^5.0.3",
-    "astro": "^5.5.4",
+    "astro": "^7.2.9",
     "photoswipe": "^5.3.9"
   },
   "devDependencies": {

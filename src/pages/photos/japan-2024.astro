@@ -2,7 +2,7 @@
 import Album from "../../layouts/Album.astro"
 import image from "../../assets/thumbs/japan-2024.jpg"
 
-const photos = await Astro.glob("../../assets/photos/japan-2024/*.jpg")
+const photos = Object.values(import.meta.glob("../../assets/photos/japan-2024/*.jpg", { eager: true }))
 ---
 
 <Album title="japan 2024" url="/photos/japan-2024/" photos={photos} image={image.src}>
