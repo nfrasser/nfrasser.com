@@ -16,6 +16,8 @@ export default defineConfig({
 	},
 
 	adapter: cloudflare({
+		build: "compile",
+		runtime: "cloudflare-binding",
 		platformProxy: {
 			enabled: true
 		}
