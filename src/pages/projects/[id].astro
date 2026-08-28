@@ -1,0 +1,25 @@
+---
+import { getCollection, render, type CollectionEntry } from "astro:content"
+import Layout from "../../layouts/Layout.astro"
+
+interface Props {
+	entry: CollectionEntry<"projects">
+}
+
+export async function getStaticPaths() {
+	const posts: CollectionEntry<"projects">[] = await getCollection("projects")
+	return posts.map((entry) => ({
+		params: { id: entry.id },
+		props: { entry }
+	}))
+}
+
+export const prerender = true
+
+const { entry } = Astro.props
+const { Content } = await render(entry)
+---
+
+<Layout title={entry.data.title} url={`/projects/${entry.id}/`} summary={entry.data.summary} image={entry.data.image}>
+	<Content />
+</Layout>
